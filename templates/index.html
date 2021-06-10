@@ -1,0 +1,437 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css'%}" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/main.css'%}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabetics</title>
+</head>
+
+<body>
+    <header class="main-header scrollspy" id="mainh">
+        <nav class="transparent">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"><i class="material-icons"
+                            style="font-size: xx-large;">local_hospital</i>Diabetics</a>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse">
+                        <i class="fa fa-bars" style="font-size: x-large;"></i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a class="active-link" href="#mainh">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#contact">FEEDBACK</a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav">
+                        <h4 class="purple-text text-darken-4 center">Diabetics</h4>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>
+                            <a class="active-link" href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="
+                #about">About</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Showcase -->
+        <div class="showcase container">
+            <div class="row">
+                <div class="col s12 m10 offset-m1 center">
+                    <br>
+                    <h4 class='common-text' style="font-weight: 400;">Welcome To Diabetics</h4>
+                    <br>
+                    <h2 class='common-text' style="font-weight: 450;">Easy and Credible Diabetes Diagnosis</h2>
+                    <br>
+                    <br>
+                    <p class="flow-text common-text" style="font-weight: 400;">
+                        Get Immediate Check-up?<br> Click Below..
+                    </p>
+                    <br>
+                    <a href="#getresult" class="btn btn-large btn-floating transparent"><i
+                            class="fas fa-chevron-circle-down "
+                            style="font-size: xxx-large; padding-top:7px; opacity:0.7;"></i></a>
+
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- card -->
+
+    <section class="section-tabs center scrollspy" id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="head1">
+                    <h2>How Things Work</h2>
+                    <hr>
+                    <br>
+                </div>
+            </div>
+
+
+            <div class="row row-1">
+
+                <div class="col l5 hide-on-med-and-down right-align" style="padding: auto;">
+                    <br><br><br>
+                    <h3>Enter Your Details</h3>
+
+                </div>
+
+                <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l1">
+                    <div class="card card-1 hide-on-med-and-down">
+                        <div class="card-image">
+                            <img src="{% static 'img/upload.png'%}" />
+                        </div>
+                    </div>
+                    <div class="card card-2 hide-on-large-only">
+                        <div class="card-image">
+                            <img class="activator" src="{% static 'img/upload.png'%}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Enter Your Details<i
+                                    class="material-icons right blue-text text-darken-1"
+                                    style="font-size:xx-large;">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Enter your Details<i
+                                    class="material-icons right">close</i></span><br>
+                            <hr><br>
+                            <p class="flow-text">Enter all the mandatory fields <br> and click on <br>GET RESULTS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="row row-2">
+
+                <div class="col s10 offset-s1 m8 offset-m2 l6 ">
+                    <div class="card card-1 hide-on-med-and-down">
+                        <div class="card-image">
+                            <img src="{% static 'img/process1.png'%}" />
+                        </div>
+                    </div>
+                    <div class="card card-2 hide-on-large-only">
+                        <div class="card-image">
+                            <img class="activator" src="{% static 'img/process1.png'%}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Data Processing<i
+                                    class="material-icons right blue-text text-darken-1"
+                                    style="font-size:xx-large;">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Data Processing<i
+                                    class="material-icons right">close</i></span><br>
+                            <hr><br>
+                            <p class="flow-text">Get data processed <br>in a few seconds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l5 hide-on-med-and-down left-align offset-l1" style="padding: auto;">
+                    <br><br><br>
+                    <h3>Data Processing</h3>
+
+                </div>
+
+            </div>
+
+            <br><br>
+
+            <div class="row row-3">
+
+                <div class="col l5 hide-on-med-and-down right-align" style="padding: auto;">
+                    <br><br><br>
+                    <h3>Get The Result</h3>
+                </div>
+
+                <div class="col s10 offset-s1 m8 offset-m2 l6 offset-l1">
+                    <div class="card card-1 hide-on-med-and-down">
+                        <div class="card-image">
+                            <img src="{% static 'img/analyse.jpeg'%}" />
+                        </div>
+                    </div>
+                    <div class="card card-2 hide-on-large-only">
+                        <div class="card-image">
+                            <img class="activator" src="{% static 'img/analyse.jpeg'%}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Get The Result<i
+                                    class="material-icons right blue-text text-darken-1"
+                                    style="font-size:xx-large;">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Get The Result<i
+                                    class="material-icons right">close</i></span><br>
+                            <hr><br>
+                            <p class='flow-text'> Get clear and accurate <br> results in seconds. <br> Accuracy - 98%
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- section- machine learning -->
+    <section class="scrollspy" id="getresult">
+        <div class="pimg1">
+            <div class="ptext">
+                <span class="border">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <br><br>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h3 class="center">Check Your Report Now</h3>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="center">
+                                            <form action="connecttoreport" method="POST">
+                                                {% csrf_token %}
+                                                <input type="submit" value="Check For Free" class="btn btn-large"
+                                                    style="margin-top: 9px; background: #ff4b2b; border-radius:25px;" />
+                                            </form>
+                                            <br />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h4 class="center">
+                                            Skills & Implementations
+                                        </h4>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row center">
+                                    <div class="col s12 m4 l4">
+                                        <h5><i class="material-icons" style="font-size: xx-large;">security</i> Secure
+                                            Handling</h5>
+                                        <p>
+                                            Complete data confidentiality <br>& user data safety.
+                                        </p><br class="hide-on-med-and-up"><br class="hide-on-med-and-up">
+                                    </div>
+                                    <div class="col s12 m4 l4">
+                                        <h5><i class="material-icons" style="font-size: xx-large;">psychology</i>
+                                            Machine
+                                            Learning</h5>
+                                        <p>
+                                            Using Random Forest Classifier Algorithm <br> & RandomSearchCv
+                                        </p><br class="hide-on-med-and-up"><br class="hide-on-med-and-up">
+                                    </div>
+                                    <div class="col s12 m4 l4">
+                                        <h5><i class="fa fa-chart-line"></i> Web Development</h5>
+                                        <p>
+                                            Front-end : HTML , CSS , JavaScript , JQuery , MaterializeCSS <br>
+                                            Back-end : Django <br>
+                                            Database : PostGreSQL
+                                        </p><br class="hide-on-med-and-up"><br class="hide-on-med-and-up">
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section feeback -->
+    <section class="section blue lighten-4 scrollspy" id="contact">
+        <div class="container transparent">
+            <div class="row">
+                <div class="col s10 offset-s1 m8 offset-m2 l5 pull-l1">
+                    <br>
+                    <div class="row">
+                        <div class="card-panel transparent z-depth-2 center" style="border-radius: 100px;">
+                            <h4>Get In Touch</h4>
+                            <p style="word-spacing: 3px ; font-size: 900">
+                                <b><i class="far fa-envelope fa-1x" style="font-size: x-large;"></i>
+                                    diabeticsofficial@gmail.com</b>
+
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="card style=" border-radius: 20px; "" style="border-radius: 50px;">
+                            <div class="card-image" style="border-radius: 50px;">
+                                <img src="{% static 'img/aboutuspic.jpg'%}" style="border-radius: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m10 offset-m1 l7 push-l1">
+                    <br>
+                    <div class="card-panel white
+               lighten-4 grey-text text-darken-4 z-depth-3" style="border-radius: 30px;">
+                        <form action="feedback" method="POST"> {% csrf_token %}
+                            <div class='grey lighten-3 center' style="border-radius: 30px;">
+                                <br>
+                                <h5>Queries & Feedback</h5>
+                                <br>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="fname" name="fname" />
+                                <label for="fname">First Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="lname" name="lname" />
+                                <label for="lname">Last Name</label>
+                            </div>
+                            <div class="input-field">
+                                <input type="email" id="email" name='email' />
+                                <label for="email">Email ID</label>
+                            </div>
+
+                            <div class="input-field">
+                                <textarea type="text" id="fb" name='fb' style="height: 70px; width: 100%"></textarea>
+                                <label for="fb">Enter Queries</label>
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit" class="btn btn-large btn-ext" style="margin-top: 9px; background: #ff4b2b; border-radius:30px;" />
+                        </form>
+                    </div>
+
+                    <div class="orange darken-3 white-text center" style="border-radius: 10px;">{{val}}</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+    <!--Fixed Action Buttion-->
+    <div class="fixed-action-btn tooltipped" data-tooltip='Go Up' data-position='left'>
+        <a href="#mainh" class="btn-floating btn-large pulse" style="background: #d42506;">
+            <i class="large material-icons" style="font-size: xx-large;">arrow_upward</i>
+        </a>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="contact" class="page-footer scrollspy blue lighten -1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Us</h5>
+                    <p class="grey-text text-lighten-4">
+                        Our mission is to learn new skills and sharpen our old skills while being creative and and having the will to put in extra effort.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text"></h5>
+                    <ul>
+                        <li>
+                            <a style="color: white; padding: 5px" href="https://facebook.com">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="color: white; padding: 5px" href="https://twitter.com">
+                                <i class="fab fa-twitter fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="color: white; padding: 5px" href="https://instagram.com">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright blue darken-2">
+            <div class="container">
+                Diabetics &copy; 2020
+                <a class="grey-text text-lighten-4 right" href="#!">Terms And Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js'%}"></script>
+    <script>
+        $(document).ready(function() {
+            // Custom JS & jQuery here
+
+            $(".button-collapse").sideNav();
+
+            const options = [{
+                selector: ".row-1",
+                offset: 50,
+                callback: function(el) {
+                    Materialize.fadeInImage($(el));
+                },
+            }, {
+                selector: ".row-2",
+                offset: 300,
+                callback: function(el) {
+                    Materialize.fadeInImage($(el));
+                },
+            }, {
+                selector: ".row-3",
+                offset: 350,
+                callback: function(el) {
+                    Materialize.fadeInImage($(el));
+                },
+            }, ];
+
+            Materialize.scrollFire(options);
+            $(".parallax").parallax();
+            $('.scrollspy').scrollSpy();
+
+        });
+    </script>
+</body>
+
+</html>
